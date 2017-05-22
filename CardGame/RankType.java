@@ -1,4 +1,5 @@
 package CardGame;
+
 public enum RankType {
   ACE(1),ONE(1),TWO(2),THREE(3),
   FOUR(4),FIVE(5),SIX(6),SEVEN(7),
@@ -6,13 +7,14 @@ public enum RankType {
   JACK(10),QUEEN(10),KING(10);
 
 
+ 
   private final int rankValue;
 
   private RankType(int rankValue){
     this.rankValue = rankValue;
   }
 
-  public int getRank() {
-    return rankValue;
+  public int getRankValue() {
+    return this.rankValue;
   }
 }

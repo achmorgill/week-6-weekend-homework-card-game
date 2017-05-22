@@ -1,4 +1,5 @@
 package CardGame;
+
  public class Card{
   private SuitType suit;  
   private RankType rank; 
@@ -10,10 +11,13 @@ package CardGame;
   } 
 
 
-  public String getSuit() {
-    return getSuit();
+  public String getSuitName() {
+    return suit.getSuitName();
   }
-  public int getRank() {
-    return getRank();
+
+  public int getRankValue() {
+    return rank.getRankValue();
   }
+
+  
 }

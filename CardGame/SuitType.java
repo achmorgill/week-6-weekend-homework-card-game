@@ -6,13 +6,14 @@ public enum SuitType {
   CLUBS("Clubs"),
   SPADES("Spades");
 
-  private final String suitString;
+  private final String suitName;
 
-  private SuitType (String suitString) {
-    this.suitString = suitString;
+  private SuitType(String suitName) {
+    this.suitName = suitName;
   }
 
-  private String getSuit() {
-    return suitString;
+  public String getSuitName() {
+    System.out.println(this.suitName);
+    return this.suitName;
   }
 }
